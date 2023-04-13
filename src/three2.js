@@ -1,4 +1,4 @@
-console.warn( 'Scripts "build/three.js" and "build/three.min.js" are deprecated with r150+, and will be removed with r160. Please use ES Modules or alternatives: https://threejs.org/docs/index.html#manual/en/introduction/Installation' );
+console.warn( 'Scripts "build/three2.js" and "build/three.min.js" are deprecated with r150+, and will be removed with r160. Please use ES Modules or alternatives: https://threejs.org/docs/index.html#manual/en/introduction/Installation' );
 /**
  * @license
  * Copyright 2010-2023 Three.js Authors
@@ -1928,7 +1928,7 @@ console.warn( 'Scripts "build/three.js" and "build/three.min.js" are deprecated 
 
         }
 
-        set image( value = null ) {
+        set image( value) {
 
             this.source.data = value;
 
@@ -12565,11 +12565,11 @@ console.warn( 'Scripts "build/three.js" and "build/three.min.js" are deprecated 
 
             this.texture = new CubeTexture( images, options.mapping, options.wrapS, options.wrapT, options.magFilter, options.minFilter, options.format, options.type, options.anisotropy, options.encoding );
 
-            // By convention -- likely based on the RenderMan spec from the 1990's -- cube maps are specified by WebGL (and three.js)
+            // By convention -- likely based on the RenderMan spec from the 1990's -- cube maps are specified by WebGL (and three2.js)
             // in a coordinate system in which positive-x is to the right when looking up the positive-z axis -- in other words,
             // in a left-handed coordinate system. By continuing this convention, preexisting cube maps continued to render correctly.
 
-            // three.js uses a right-handed coordinate system. So environment maps used in three.js appear to have px and nx swapped
+            // three2.js uses a right-handed coordinate system. So environment maps used in three2.js appear to have px and nx swapped
             // and the flag isRenderTargetTexture controls this conversion. The flip is not required when using WebGLCubeRenderTarget.texture
             // as a cube texture (this is detected when isRenderTargetTexture is set to true for cube textures).
 
@@ -32796,7 +32796,7 @@ console.warn( 'Scripts "build/three.js" and "build/three.min.js" are deprecated 
 	 - http://ideone.com/NoEbVM
 
 	This CubicPoly class could be used for reusing some variables and calculations,
-	but for three.js curve use, it could be possible inlined and flatten into a single function call
+	but for three2.js curve use, it could be possible inlined and flatten into a single function call
 	which can be placed in CurveUtils.
 	*/
 
