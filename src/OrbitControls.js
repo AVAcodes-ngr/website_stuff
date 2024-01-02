@@ -13,7 +13,7 @@ const _changeEvent = { type: 'change' };
 const _startEvent = { type: 'start' };
 const _endEvent = { type: 'end' };
 
-class OrbitControls extends EventDispatcher {
+window.OrbitControls = class OrbitControls extends EventDispatcher {
 
     constructor( object, domElement ) {
 
