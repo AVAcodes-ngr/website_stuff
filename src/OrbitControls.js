@@ -13,7 +13,7 @@
 //    Zoom - middle mouse, or mousewheel / touch: two finger spread or squish
 //    Pan - right mouse, or arrow keys / touch: three finger swipe
 
-const OrbitControls = function ( object, domElement ) {
+var OrbitControls = function ( object, domElement ) {
 
 	this.object = object;
 
@@ -1040,3 +1040,4 @@ Object.defineProperties( THREE.OrbitControls.prototype, {
         }
 
 } );
+console.log("LOADED ORBIT LOADER!!!!");
